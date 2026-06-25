@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "sector-slug",
+  "type": "string",
+  "enum": [
+    "security",
+    "justice",
+    "healthcare",
+    "education",
+    "housing",
+    "economy",
+    "technology",
+    "foreign-relations",
+    "infrastructure",
+    "environment",
+    "political-system",
+    "administration",
+    "emergency",
+    "culture",
+    "national-unity",
+    "cost-of-living"
+  ]
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "title": "إخفاق في إدارة مشروع الطريق الدائري",
+    "description": "تأخر تنفيذ مشروع الطريق الدائري سنتين بسبب سوء الإدارة وتجاوز الميزانية",
+    "source_url": "https://example.com/mistake/ring-road",
+    "type": "mismanagement",
+    "date_made": "2024-03-15",
+    "created_by": null,
+    "sector": "infrastructure",
+    "impact": "medium",
+    "notes": null
+  }
+]

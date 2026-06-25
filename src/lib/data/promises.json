@@ -1,0 +1,13 @@
+[
+  {
+    "title": "توفير 50,000 وحدة سكنية للمواطنين",
+    "description": "الوعد ببناء 50,000 وحدة سكنية ميسرة التكلفة خلال ثلاث سنوات",
+    "source_quote": "سنوفر 50 ألف وحدة سكنية للمواطنين خلال الفترة القادمة",
+    "source_url": "https://example.com/promise/housing-units",
+    "date_made": "2023-11-01",
+    "deadline": "2026-11-01",
+    "status": "in_progress",
+    "sector": "housing",
+    "notes": null
+  }
+]
