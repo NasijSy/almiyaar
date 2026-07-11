@@ -2,9 +2,9 @@
     import EditIcon from '@iconify-svelte/akar-icons/edit';
     let links = [
         { name: "الإنجازات", href: "/achievements" },
-        { name: "المشاكل والتحديات", href: "/challenges" },
+        { name: "السلبيات والمشاكل", href: "/problems" },
         { name: "الوعود الحكومية", href: "/promises" },
-        { name: "فهرس الدراسات", href: "/studies" },
+        { name: "الدراسات والتقارير", href: "/studies" },
     ];
     let projectLinks = [
         { name: "ساهم معنا", href: "/contribute" },
@@ -15,8 +15,7 @@
     <div class="flex flex-col md:flex-row gap-6 justify-between">
         <div class="flex flex-col items-start gap-1 px-2 md:px-0">
             <div class="flex flex-row items-center gap-4 mb-2">
-                <img src="/logo.png" alt="شعار تقرير الأداء الحكومي في سوريا" class="h-12" />
-                <h2 class="text-2xl! text-secondary font-bold mb-0!">معيار</h2>
+                <img src="/logo.png" alt="شعار على شكل قبضة يد ترفع ميزاناً ذهبياً" class="h-18" />
             </div>
             <p class="max-w-md">تقرير الكتروني يقدم لمحة عن الأداء الحكومي في سوريا بشكل مختصر ويعرض أبرز الإنجازات والتحديات في مكان واحد بهدف التوعية وإثراء النقاش العام</p>
             <div class="flex flex-row gap-4 text-palette-violet">

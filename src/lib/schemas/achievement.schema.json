@@ -14,8 +14,7 @@
       "impact": {
         "type": "string",
         "enum": ["low", "medium", "high"]
-      },
-      "notes": { "type": ["string", "null"] }
+      }
     }
   }
 }

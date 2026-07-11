@@ -3,36 +3,16 @@
   "type": "array",
   "items": {
     "type": "object",
-    "required": [
-      "title",
-      "sector",
-      "impact"
-    ],
+    "required": ["title", "description", "source_url", "sector", "impact"],
     "additionalProperties": false,
     "properties": {
-      "title": {
-        "type": "string",
-        "minLength": 1
-      },
-      "description": {
-        "type": "string"
-      },
-      "sector": {
-        "$ref": "sector-slug"
-      },
+      "title": { "type": "string", "minLength": 1 },
+      "description": { "type": "string" },
+      "source_url": { "type": "string", "format": "uri" },
+      "sector": { "$ref": "sector-slug" },
       "impact": {
         "type": "string",
-        "enum": [
-          "low",
-          "medium",
-          "high"
-        ]
-      },
-      "notes": {
-        "type": [
-          "string",
-          "null"
-        ]
+        "enum": ["low", "medium", "high"]
       }
     }
   }

@@ -10,8 +10,8 @@
     ogImage = null,
   } = $props();
 
-  let defaultTitle = 'معيار - لمحة عن الأداء الحكومي في سوريا';
-  let titleExtension = 'معيار';
+  let defaultTitle = 'المعيار - لمحة عن الأداء الحكومي في سوريا';
+  let titleExtension = 'المعيار';
   let newtitle = $derived(title ? title + ' | ' + titleExtension : defaultTitle);
   let resolvedOgImage = $derived(
     new URL(ogImage || '/og-image.jpg', `${$page.url.origin}/`).toString()

@@ -16,8 +16,7 @@
         "type": "string",
         "enum": ["not_started", "in_progress", "done", "broken", "stalled", "partial", "no_data"]
       },
-      "sector": { "$ref": "sector-slug" },
-      "notes": { "type": ["string", "null"] }
+      "sector": { "$ref": "sector-slug" }
     }
   }
 }

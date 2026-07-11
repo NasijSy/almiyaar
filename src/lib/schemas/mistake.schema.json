@@ -14,13 +14,11 @@
         "enum": ["corruption", "mismanagement", "policy_failure", "other"]
       },
       "date_made":    { "type": "string", "format": "date" },
-      "created_by": { "type": ["string", "null"] },
       "sector": { "$ref": "sector-slug" },
       "impact": {
         "type": "string",
         "enum": ["low", "medium", "high"]
-      },
-      "notes": { "type": ["string", "null"] }
+      }
     }
   }
 }
