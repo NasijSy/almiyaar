@@ -51,21 +51,18 @@
         [...achievements]
             .filter((item) => activeSector === 'all' || item.sector === activeSector)
             .sort((a, b) => dateValue(b) - dateValue(a))
-            .slice(0, 3)
     );
 
     const filteredMistakes = $derived.by(() =>
         [...mistakes]
             .filter((item) => activeSector === 'all' || item.sector === activeSector)
             .sort((a, b) => dateValue(b) - dateValue(a))
-            .slice(0, 3)
     );
 
     const filteredIssues = $derived.by(() =>
         [...issues]
             .filter((item) => activeSector === 'all' || item.sector === activeSector)
             .sort((a, b) => dateValue(b) - dateValue(a))
-            .slice(0, 3)
     );
 
     const topPromises = $derived.by(() => [...promises].sort((a, b) => dateValue(b) - dateValue(a)).slice(0, 3));
@@ -157,7 +154,7 @@
                     </div>
                     <a href="/achievements" class="text-sm text-secondary hover:underline">عرض الكل ({totalAchievements})</a>
                 </header>
-                <ul class="space-y-3 mb-0! p-0!">
+                <ul class="space-y-3 mb-0! p-0! max-h-72 md:max-h-[28rem] overflow-y-auto pr-1">
                     {#each filteredAchievements as item}
                         <li class="pb-3 border-b border-zinc-100 last:border-0 last:pb-0">
                             <h4 class="text-base font-semibold mb-1! leading-7">{item.title}</h4>
@@ -193,7 +190,7 @@
                     </div>
                     <a href="/mistakes" class="text-sm text-secondary hover:underline">عرض الكل ({totalMistakes})</a>
                 </header>
-                <ul class="space-y-3 mb-0! p-0!">
+                <ul class="space-y-3 mb-0! p-0! max-h-72 md:max-h-[28rem] overflow-y-auto pr-1">
                     {#each filteredMistakes as item}
                         <li class="pb-3 border-b border-zinc-100 last:border-0 last:pb-0">
                             <h4 class="text-base font-semibold mb-1! leading-7">{item.title}</h4>
@@ -227,7 +224,7 @@
                     </div>
                     <a href="/issues" class="text-sm text-secondary hover:underline">عرض الكل ({totalIssues})</a>
                 </header>
-                <ul class="space-y-3 mb-0! p-0!">
+                <ul class="space-y-3 mb-0! p-0! max-h-72 md:max-h-[28rem] overflow-y-auto pr-1">
                     {#each filteredIssues as item}
                         <li class="pb-3 border-b border-zinc-100 last:border-0 last:pb-0">
                             <h4 class="text-base font-semibold mb-1! leading-7">{item.title}</h4>
