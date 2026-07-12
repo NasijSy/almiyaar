@@ -91,11 +91,11 @@
     <section class="flex flex-col md:flex-row gap-4 min-h-[22rem]" aria-labelledby="hero-heading">
         <div class="md:w-1/2 order-2 md:order-1 content-center text-center md:text-start shrink-0">
             <h1 id="hero-heading" class="text-4xl! md:text-5xl! font-black leading-16">
-                الأداء الحكومي وأبرز التحديات
+                رؤية متوازنة سعياً لواقع أفضل
             </h1>
             <p class="mt-4 text-lg md:text-xl text-gray-700">
-                تقرير الكتروني يرصد القضايا الأكثر إلحاحا للمواطن ويقدم لمحة عن التحديات التي
-                تواجهها الحكومة السورية وأبرز ما نجحت في تحقيقه في مختلف المجالات.
+                تقرير الكتروني يرصد الأداء الحكومي في سوريا ويسلط الضوء على القضايا الأكثر إلحاحا للمواطن ويقدم لمحة عن أبرز إنجازات الحكومة والتحديات التي
+                تواجهها في مختلف المجالات
             </p>
         </div>
         <img
