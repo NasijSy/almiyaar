@@ -40,11 +40,11 @@ p {
 }
 
 ol {
-    @apply list-decimal list-inside mb-4;
+    @apply list-none mb-4;
 }
 
 ul {
-    @apply list-disc list-inside mb-4;
+    @apply list-none mb-4;
 }
 
 button {

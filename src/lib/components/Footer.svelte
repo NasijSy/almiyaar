@@ -2,7 +2,8 @@
     import EditIcon from '@iconify-svelte/akar-icons/edit';
     let links = [
         { name: "الإنجازات", href: "/achievements" },
-        { name: "السلبيات والمشاكل", href: "/problems" },
+        { name: "العثرات والسلبيات", href: "/mistakes" },
+        { name: "المشاكل والتحديات", href: "/issues" },
         { name: "الوعود الحكومية", href: "/promises" },
         { name: "الدراسات والتقارير", href: "/studies" },
     ];
@@ -40,7 +41,7 @@
         </div>
         <div class="flex flex-col gap-2 px-2 md:px-0">
             <h3 class="text-lg! font-bold mb-0!">راوبط الأقسام</h3>
-            <ul class="flex flex-col self-start gap-y-1 list-none!">
+            <ul class="flex flex-col self-start gap-y-1">
             {#each links as link}
                 <li class="inline-flex">
                     <a href={link.href} class="footer-link">{link.name}</a>
