@@ -107,9 +107,9 @@
 
     <section aria-labelledby="main-tracker-heading" class="space-y-5">
         <header class="flex flex-col gap-2 border-b border-zinc-200 pb-4">
-            <h2 id="main-tracker-heading" class="text-3xl font-bold mb-0!">استعرض أبرز البنود</h2>
+            <h2 id="main-tracker-heading" class="text-3xl font-bold mb-0!">نبذة عن أبرز البنود</h2>
             <p class="mb-0! text-zinc-600">
-                استعراض سريع للإنجازات والسلبيات والمشاكل مع فلترة حسب القطاع
+                استعراض سريع للإنجازات الحكومية والعثرات والمشاكل التي تؤرق السوريين مع فلترة حسب القطاع
             </p>
             <p class="mb-0! text-xs text-zinc-500">ترتيب العناصر: من الأحدث إلى الأقدم.</p>
         </header>
