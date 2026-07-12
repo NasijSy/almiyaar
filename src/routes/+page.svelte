@@ -68,11 +68,12 @@
     const topPromises = $derived.by(() => [...promises].sort((a, b) => dateValue(b) - dateValue(a)).slice(0, 3));
     const topStudies = $derived.by(() => [...studies].sort((a, b) => dateValue(b) - dateValue(a)).slice(0, 3));
 
-    const totalAchievements = achievements.length;
-    const totalMistakes = mistakes.length;
-    const totalIssues = issues.length;
     const totalPromises = promises.length;
     const totalStudies = studies.length;
+
+    const visibleAchievementsCount = $derived.by(() => filteredAchievements.length);
+    const visibleMistakesCount = $derived.by(() => filteredMistakes.length);
+    const visibleIssuesCount = $derived.by(() => filteredIssues.length);
 
     const activeSectorLabel = $derived.by(() =>
         activeSector === 'all' ? 'كل القطاعات' : sectorBySlug[activeSector]?.title ?? activeSector
@@ -149,10 +150,10 @@
             <article class="border border-zinc-200 rounded-lg p-4 bg-white">
                 <header class="flex items-center justify-between gap-3 mb-3 border-b border-zinc-100 pb-2">
                     <div>
-                        <h3 class="text-xl font-bold mb-0!">الإنجازات</h3>
+                        <h3 class="text-xl font-bold mb-0!">الإنجازات ({visibleAchievementsCount})</h3>
                         <p class="text-xs text-zinc-500 mt-1 mb-0!">نتائج إيجابية تحقق أثرها على الأرض</p>
                     </div>
-                    <a href="/achievements" class="text-sm text-secondary hover:underline">عرض الكل ({totalAchievements})</a>
+                    <a href="/achievements" class="text-sm text-secondary hover:underline">الذهاب للصفحة</a>
                 </header>
                 <ul class="space-y-3 mb-0! p-0! max-h-72 md:max-h-[28rem] overflow-y-auto pr-1">
                     {#each filteredAchievements as item}
@@ -185,10 +186,10 @@
             <article class="border border-zinc-200 rounded-lg p-4 bg-white">
                 <header class="flex items-center justify-between gap-3 mb-3 border-b border-zinc-100 pb-2">
                     <div>
-                        <h3 class="text-xl font-bold mb-0!">السلبيات</h3>
+                        <h3 class="text-xl font-bold mb-0!">السلبيات ({visibleMistakesCount})</h3>
                         <p class="text-xs text-zinc-500 mt-1 mb-0!">عثرات وأخطاء وقعت بها الحكومة السورية</p>
                     </div>
-                    <a href="/mistakes" class="text-sm text-secondary hover:underline">عرض الكل ({totalMistakes})</a>
+                    <a href="/mistakes" class="text-sm text-secondary hover:underline">الذهاب للصفحة</a>
                 </header>
                 <ul class="space-y-3 mb-0! p-0! max-h-72 md:max-h-[28rem] overflow-y-auto pr-1">
                     {#each filteredMistakes as item}
@@ -219,10 +220,10 @@
             <article class="border border-zinc-200 rounded-lg p-4 bg-white">
                 <header class="flex items-center justify-between gap-3 mb-3 border-b border-zinc-100 pb-2">
                     <div>
-                        <h3 class="text-xl font-bold mb-0!">التحديات</h3>
+                        <h3 class="text-xl font-bold mb-0!">التحديات ({visibleIssuesCount})</h3>
                         <p class="text-xs text-zinc-500 mt-1 mb-0!">مشاكل يعاني منها المواطن وقد تطلب حلولاً طويلة الأمد</p>
                     </div>
-                    <a href="/issues" class="text-sm text-secondary hover:underline">عرض الكل ({totalIssues})</a>
+                    <a href="/issues" class="text-sm text-secondary hover:underline">الذهاب للصفحة</a>
                 </header>
                 <ul class="space-y-3 mb-0! p-0! max-h-72 md:max-h-[28rem] overflow-y-auto pr-1">
                     {#each filteredIssues as item}
