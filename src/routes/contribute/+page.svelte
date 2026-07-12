@@ -2,7 +2,7 @@
     import Head from '$lib/components/Head.svelte';
 
     const TALLY_FORM_URL = 'https://tally.so/r/NpQXN0';
-    const DISCORD_URL = 'https://discord.gg/VqysmYaQbN';
+    const DISCORD_URL = 'https://discord.gg/Cs6uGTchpj';
     const GITHUB_URL = 'https://github.com/NasijSy/almiyaar';
 </script>
 
