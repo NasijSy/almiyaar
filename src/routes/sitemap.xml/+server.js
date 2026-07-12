@@ -10,9 +10,9 @@ const staticPages = [
 ];
 
 export const prerender = true;
+const BASE_URL = 'https://almiyaar.nasij.org';
 
-export function GET({ url }) {
-    const siteUrl = url.origin;
+export function GET() {
     const now = new Date().toISOString();
 
     const body = `<?xml version="1.0" encoding="UTF-8"?>
@@ -20,7 +20,7 @@ export function GET({ url }) {
 ${staticPages
     .map(
         (path) => `  <url>
-    <loc>${siteUrl}${path}</loc>
+    <loc>${BASE_URL}${path}</loc>
     <lastmod>${now}</lastmod>
   </url>`
     )
